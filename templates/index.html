@@ -1,0 +1,87 @@
+{% extends 'Base.html' %}
+{% block body %}
+
+ <h1>Product Catalogue</h1>
+
+<p> Lorem ipsum dolor sit amet consectetur
+    <span>
+        adipisicing elit. Molestiae, delectus!
+    </span>
+</p>
+
+
+<p class="firstpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas architecto totam in quia nulla
+    veniam similique hic omnis, cum fugiat incidunt et repellat pariatur non culpa vel officia reiciendis fuga!</p>
+
+<p class="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem illo, labore deserunt tempore
+    ipsum exercitationem ex optio sapiente commodi assumenda.</p>
+
+<p class="Thirdpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, pariatur.</p>
+
+<p class="Fourthpara">Lorem ipsum dolor sit amet consectetur .</p>
+
+<section class="categories">
+    <ul>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+        <li value="Home"><a href="">Home </a></li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2 id="electronics">Electronics</h2>
+
+
+    <h4>Apple</h4>
+    <p> <strong>Price:</strong>$999.99</p><span>Abc</span>
+
+    <p><strong>Availibility:</strong>In Stock</p>
+
+    <img src="{{ url_for('static', filename='Apple laptops.png') }}" alt="MacBook Air" width="200" height="200">
+
+    <P class="description">The MacBook Air is a thin, light, and durable laptop that is perfect for on-the-go use. It is
+        equipped with a Retina display, Magic Keyboard, Touch ID, and a Tenth-generation Intel Core i3 processor. It is
+        available in Gold, Space Gray, and Silver.</P>
+
+
+    </P>
+
+    <iframe src="https://www.youtube.com/embed/UZ_JZaNQrAw?autoplay=1" frameborder="2" allow="autoplay"></iframe>
+
+    </fieldset>
+
+    <ul>
+        <li><a href="">Add to Cart</a></li>
+        <li><a href="">More Details</a></li>
+    </ul>
+</section>
+
+<section class="Clothes">
+
+    <h2 id="clothing">Clothing</h2>
+
+
+    <h4>Lewis</h4>
+    <p> <strong>Price:</strong>$299.99</p>
+
+    <p><strong>Availibility:</strong>In Stock</p>
+
+    <img src="{{ url_for('static', filename='clothing.png') }}" alt="Jeans" width="200" height="200">
+
+    <P class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi necessitatibus ipsum nam
+        veniam tempore expedita! Facilis minima nam quaerat aperiam doloribus earum repellendus tempore deserunt. Amet
+        suscipit quisquam tempore at.</P>
+
+
+    </P>
+
+
+    <ul>
+        <li><a href="">Add to Cart</a></li>
+        <li><a href="">More Details</a></li>
+    </ul>
+</section> 
+
+{% endblock body %}
